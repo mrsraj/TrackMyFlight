@@ -1,0 +1,37 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Services from "./Pages/Services";
+import Contact from "./Pages/Contact";
+import CharterBenefits from "./Pages/CharterBenefits";
+import JetStatsSection from "./Pages/JetStatsSection";
+import TestimonialsSection from "./Pages/Testimonials";
+import AboutClient from "./Our Client/AboutClient";
+import Products from "./Products/OurProduct";
+
+function App() {
+  return (
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/Charter" element={<CharterBenefits />} />
+            <Route path="/JetStats" element={<JetStatsSection />} />Testimonials
+            <Route path="/Testimonials" element={<TestimonialsSection />} />
+          </Routes>
+        </main>
+        <AboutClient/>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+
+export default App;
