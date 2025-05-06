@@ -10,6 +10,7 @@ import JetStatsSection from "./Pages/JetStatsSection";
 import TestimonialsSection from "./Pages/Testimonials";
 import AboutClient from "./Our Client/AboutClient";
 import Products from "./Products/OurProduct";
+import TeamSection from "./Our Team/Team";
 
 function App() {
   return (
@@ -23,8 +24,9 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/Charter" element={<CharterBenefits />} />
-            <Route path="/JetStats" element={<JetStatsSection />} />Testimonials
+            <Route path="/JetStats" element={<JetStatsSection />} />
             <Route path="/Testimonials" element={<TestimonialsSection />} />
+            <Route path="/teamSection" element={<TeamSection />} />
           </Routes>
         </main>
         <AboutClient/>
