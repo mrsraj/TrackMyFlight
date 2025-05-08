@@ -3,7 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { useNavigate } from "react-router-dom"; // Import the hook correctly
+import { useNavigate } from "react-router-dom";
+import CharterOptions from "./CharterOptions";
 
 const banners = [
     {
@@ -33,14 +34,14 @@ const banners = [
 ];
 
 function AnimatedBanner() {
-    const navigate = useNavigate();  
+    const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/contact'); 
+        navigate('/contact');
     };
 
     return (
-        <section className="w-full h-[80vh] overflow-hidden relative">
+        <section className="w-full relative">
             <Swiper
                 modules={[Navigation, Autoplay]}
                 spaceBetween={0}
@@ -49,15 +50,11 @@ function AnimatedBanner() {
                 autoplay={{ delay: 3000 }}
                 speed={1200}
                 loop
-                className="w-full h-full"
+                className="w-full h-screen"
             >
                 {banners.map((item, index) => (
                     <SwiperSlide key={index} className="w-full h-full relative">
-                        <img
-                            src={item.src}
-                            alt={item.alt}
-                            className="w-full h-full object-cover"
-                        />
+                        <img src={item.src} alt={item.alt} className="w-full h-full object-cover" />
                         {/* Text Overlay */}
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/40 text-center px-4">
                             <h2 className="text-3xl md:text-5xl font-bold mb-4">{item.title}</h2>
@@ -72,6 +69,7 @@ function AnimatedBanner() {
                     </SwiperSlide>
                 ))}
             </Swiper>
+            <CharterOptions />
         </section>
     );
 }
