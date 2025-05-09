@@ -12,26 +12,31 @@ import AboutClient from "./Our Client/AboutClient";
 import Products from "./Products/OurProduct";
 import TeamSection from "./Our Team/Team";
 import AnimatedBanner from "./Binner/Binner";
+import CharterFeature from "./Pages/CharacterFeature";
+import PopularDestinations from "./Pages/PopularDestinations";
 
 function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        
+
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<AnimatedBanner/>} />
+            <Route path="/" element={<AnimatedBanner />} />
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/Charter" element={<CharterBenefits />} />
-            <Route path="/JetStats" element={<JetStatsSection />} />
+            {/* <Route path="/JetStats" element={<JetStatsSection />} /> */}
             <Route path="/Testimonials" element={<TestimonialsSection />} />
             <Route path="/teamSection" element={<TeamSection />} />
           </Routes>
         </main>
-        <AboutClient/>
+        <CharterFeature />
+        <PopularDestinations/>
+        <JetStatsSection/>
+        <AboutClient />
         <Footer />
       </div>
     </Router>

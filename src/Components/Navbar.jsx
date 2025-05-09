@@ -84,7 +84,7 @@ function Navbar() {
 
                     <Link to="/contact" className="text-gray-300 hover:text-green-800">Contact</Link>
                     <Link to="/Charter" className="text-gray-300 hover:text-green-800">CharterBenefits</Link>
-                    <Link to="/JetStats" className="text-gray-300 hover:text-green-800">JetStatsSection</Link>
+                    {/* <Link to="/JetStats" className="text-gray-300 hover:text-green-800">JetStatsSection</Link> */}
 
                     {/* Gallery Dropdown */}
                     <div
@@ -173,7 +173,7 @@ function Navbar() {
 
                     <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
                     <Link to="/Charter" onClick={() => setMobileMenuOpen(false)}>CharterBenefits</Link>
-                    <Link to="/JetStats" onClick={() => setMobileMenuOpen(false)}>JetStatsSection</Link>
+                    {/* <Link to="/JetStats" onClick={() => setMobileMenuOpen(false)}>JetStatsSection</Link> */}
 
                     {/* Gallery Dropdown */}
                     <div>
