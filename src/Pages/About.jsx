@@ -3,7 +3,7 @@ import AboutAlternatingCards from "./AboutAlternatingCards";
 
 function About() {
     return (
-        <section className="bg-gray-100 py-16 px-4">
+        <section className="bg-[#fffcf6] py-16 px-4">
             <div className="max-w-7xl mx-auto space-y-16">
 
                 <div className="text-center">

@@ -1,9 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Services from "./Pages/Services";
+//About Us
+import Overview from "./Pages/about/Overview";
 import Contact from "./Pages/Contact";
 import CharterBenefits from "./Pages/CharterBenefits";
 import JetStatsSection from "./Pages/JetStatsSection";
@@ -14,6 +13,7 @@ import TeamSection from "./Our Team/Team";
 import AnimatedBanner from "./Binner/Binner";
 import CharterFeature from "./Pages/CharacterFeature";
 import PopularDestinations from "./Pages/PopularDestinations";
+import About from "./Pages/About";
 
 function App() {
   return (
@@ -24,7 +24,8 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<AnimatedBanner />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/home" element={<AnimatedBanner />} />
+            <Route path="/about-us/overview" element={<Overview />} />
             <Route path="/products" element={<Products />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/Charter" element={<CharterBenefits />} />
@@ -33,10 +34,10 @@ function App() {
             <Route path="/teamSection" element={<TeamSection />} />
           </Routes>
         </main>
-        <CharterFeature />
+        {/* <CharterFeature />
         <PopularDestinations/>
         <JetStatsSection/>
-        <AboutClient />
+        <AboutClient /> */}
         <Footer />
       </div>
     </Router>

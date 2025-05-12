@@ -3,13 +3,13 @@ import aboutInfo from "../Data/AboutInfo";
 
 const AboutAlternatingCards = () => {
     return (
-        <section className="bg-gray-100 py-16 px-4">
+        <section className="bg-[#fff2d9] py-16 px-4">
             <div className="space-y-20 max-w-7xl mx-auto">
                 {aboutInfo.map((item, index) => (
                     <div
                         key={index}
                         className={`flex flex-col-reverse lg:flex-row ${index % 2 !== 0 ? "lg:flex-row-reverse" : ""
-                            } items-center gap-10 bg-white p-6 rounded-2xl shadow-md`}
+                            } items-center gap-10 bg-[#fee0a8] p-6 rounded-2xl shadow-md`}
                     >
                         {/* Text Content */}
                         <div className="w-full lg:w-1/2">
