@@ -4,7 +4,7 @@ import clients from "../Data/OurClient";
 
 function AboutClient() {
     return (
-        <section className="bg-gray-100 py-16 px-4">
+        <section className="bg-[#f5efe3] py-16 px-4">
             <div className="max-w-7xl mx-auto space-y-16">
                 {/* Our Esteemed Clients */}
                 <div className="text-center">

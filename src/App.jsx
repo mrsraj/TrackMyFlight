@@ -13,7 +13,12 @@ import TeamSection from "./Our Team/Team";
 import AnimatedBanner from "./Binner/Binner";
 import CharterFeature from "./Pages/CharacterFeature";
 import PopularDestinations from "./Pages/PopularDestinations";
-import About from "./Pages/About";
+import About from "./Pages/Certificate";
+import ContactUs from "./Pages/Contact";
+import MissionAndOverview from "./Pages/MissionAndOverview";
+import Certificate from "./Pages/Certificate";
+import OurPatner from "./Our Client/OutPatner";
+
 
 function App() {
   return (
@@ -26,12 +31,15 @@ function App() {
             <Route path="/" element={<AnimatedBanner />} />
             <Route path="/home" element={<AnimatedBanner />} />
             <Route path="/about-us/overview" element={<Overview />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/products/all" element={<Products />} />
             <Route path="/Charter" element={<CharterBenefits />} />
-            {/* <Route path="/JetStats" element={<JetStatsSection />} /> */}
             <Route path="/Testimonials" element={<TestimonialsSection />} />
-            <Route path="/teamSection" element={<TeamSection />} />
+            <Route path="/about-us/ourteam" element={<TeamSection />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/about-us/mission-vision" element={<MissionAndOverview />} />
+            <Route path="/about-us/certifications" element={<Certificate />} />
+            <Route path="/clients-partners/clients" element={<AboutClient />} />
+            <Route path="/clients-partners/partners" element={<OurPatner />} />
           </Routes>
         </main>
         {/* <CharterFeature />

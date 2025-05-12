@@ -38,10 +38,9 @@ export const NavbarLinks = [
     subLinks: [
       { name: "Company Overview", link: "/about-us/overview", icon: FaBuilding },
       { name: "Mission & Vision", link: "/about-us/mission-vision", icon: FaBullseye },
-      { name: "Infrastructure", link: "/about-us/infrastructure", icon: FaTools },
+      { name: "Our Team", link: "/about-us/ourteam", icon: FaTools },
       { name: "Certifications", link: "/about-us/certifications", icon: FaCertificate },
     ],
-    class: ""
   },
   {
     name: "PRODUCTS",
